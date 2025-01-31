@@ -53,4 +53,6 @@ tests.isNotANumber(multiply("hello", 2), 'Product of "hello" and 2 should return
 // Edge Cases
 
 tests.isEqual(multiply(2,0), 0, "Product of 2 and 0 should return 0");
+tests.isEqual(multiply(Infinity, 2), Infinity, "Product of Infinity and 2 should return Infinity");
+
 //#endregion
