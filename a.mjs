@@ -20,7 +20,13 @@ import test from "./test.mjs";
 //#region function -----------------------------------------------------------------
 // Write your function her.
 
+function multiply(...args) {
+    if (args.some(arg => isNaN(Number(arg)))) {
+        return NaN;
+    }
 
+    return args.reduce((product, current) => product * Number(current), 1);
+};
 
 //#endregion
 
