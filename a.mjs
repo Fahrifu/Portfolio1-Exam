@@ -44,6 +44,6 @@ const tests = test("Multiply function");
 
 tests.isEqual(multiply(2,3), 6, "Product of 2 and 3 should be 6");
 tests.isEqual(multiply(2, "3"), 6, "Product of 2 and '3' should be 6");
-
+tests.isEqual(multiply(1,2,3,4), 24, "Product of 1, 2, 3, 4 should be 24")
 
 //#endregion
