@@ -56,5 +56,5 @@ tests.isEqual(multiply(2,0), 0, "Product of 2 and 0 should return 0");
 tests.isEqual(multiply(Infinity, 2), Infinity, "Product of Infinity and 2 should return Infinity");
 tests.isEqual(multiply(-Infinity, 2), -Infinity, "Product of -Infinity and 2 should return -Infinity");
 tests.isEqual(multiply(), 1, "Product of no arguments should return 1");
-
+tests.isNotANumber(multiply(NaN, 2), "Product of NaN and 2 should return NaN");
 //#endregion
