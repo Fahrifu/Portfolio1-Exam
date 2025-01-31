@@ -37,6 +37,10 @@ function multiply(...args) {
 //#region Tests --------------------------------------------------------------------
 // Write your tests her.
 
+const tests = test("Multiply function");
 
+// Valid Inputs
+
+tests.isEqual(multiply(2,3), 6, "Product of 2 and 3 should be 6");
 
 //#endregion
