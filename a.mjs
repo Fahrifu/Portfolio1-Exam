@@ -1,3 +1,4 @@
+import { createTestScheduler } from "jest";
 import test from "./test.mjs";
 
 /*
@@ -42,5 +43,7 @@ const tests = test("Multiply function");
 // Valid Inputs
 
 tests.isEqual(multiply(2,3), 6, "Product of 2 and 3 should be 6");
+tests.isEqual(multiply(2, "3"), 6, "Product of 2 and '3' should be 6");
+
 
 //#endregion
