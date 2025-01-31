@@ -48,4 +48,9 @@ tests.isEqual(multiply(1,2,3,4), 24, "Product of 1, 2, 3, 4 should be 24");
 // Invalid Inputs
 
 tests.isNotANumber(multiply(2, "a"), 'Product of 2 and "a" should return NaN');
+tests.isNotANumber(multiply("hello", 2), 'Product of "hello" and 2 should return NaN');
+
+// Edge Cases
+
+
 //#endregion
