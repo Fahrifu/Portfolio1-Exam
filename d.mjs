@@ -60,6 +60,7 @@ tests.isEqual(guessNumber("10", 5), null, "If target is string '10', return null
 tests.isEqual(guessNumber(10, null), null, "if guess is null, return null");
 tests.isEqual(guessNumber(10, 1.5), null, "If guess is not an integer, return null");
 // Edge cases
+tests.isEqual(guessNumber(10000, 9999), "Too low", "If target is 10000 and guess is 9999, return 'Too low'");
 
 
 //#endregion
