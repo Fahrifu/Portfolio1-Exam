@@ -58,6 +58,6 @@ tests.isEqual(formatName("  john  "), "John", "String '  john  ' should be forma
 tests.isEqual(formatName("JOHN DOE"), "John Doe", "String 'JOHN DOE' should be formatted to 'John Doe'");
 
 // Invalid Input
-
+tests.isEqual(formatName(42), null, "Non-string input 42 should return to null");
 
 //#endregion
