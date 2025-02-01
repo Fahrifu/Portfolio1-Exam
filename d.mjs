@@ -32,6 +32,15 @@ function guessNumber(target, guess) {
     ) {
         return null;
     }
+
+    if (guess < target) {
+        return "Too low";
+    } else if (guess > target) {
+        return "Too high";
+    } else {
+        return "Correct";
+    }
+    
 }
 
 
