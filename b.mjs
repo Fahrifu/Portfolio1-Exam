@@ -65,5 +65,6 @@ tests.isEqual(formatName("123"), null, "String '123' should return null");
 
 // Edge Cases
 tests.isEqual(formatName(""), "", "Empty string should return an empty string");
+tests.isEqual(formatName("  "), "", "Whitespace-only string should return an empty string");
 
 //#endregion
