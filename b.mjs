@@ -59,5 +59,6 @@ tests.isEqual(formatName("JOHN DOE"), "John Doe", "String 'JOHN DOE' should be f
 
 // Invalid Input
 tests.isEqual(formatName(42), null, "Non-string input 42 should return to null");
+tests.isEqual(formatName(null), null, "Non-string input null should return null");
 
 //#endregion
