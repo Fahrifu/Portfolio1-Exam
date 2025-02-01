@@ -63,4 +63,7 @@ tests.isEqual(formatName(null), null, "Non-string input null should return null"
 tests.isEqual(formatName("john@doe"), null, "String 'john@doe' should return null");
 tests.isEqual(formatName("123"), null, "String '123' should return null");
 
+// Edge Cases
+tests.isEqual(formatName(""), "", "Empty string should return an empty string");
+
 //#endregion
