@@ -31,8 +31,13 @@ function formatName(name) {
 
     const trimmedName = name.trim();
     if (trimmedName === "") {
-        return ""
+        return "";
     }
+
+    return trimmedName
+    .split(/\s+/)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
 }
 
 //#endregion
