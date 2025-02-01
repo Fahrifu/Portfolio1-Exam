@@ -58,6 +58,7 @@ tests.isEqual(guessNumber(10, 10), "Correct!", "If target is 10 and guess is 10,
 tests.isEqual(guessNumber(10, "5"), null, "If guess is string '5', return null");
 tests.isEqual(guessNumber("10", 5), null, "If target is string '10', return null");
 tests.isEqual(guessNumber(10, null), null, "if guess is null, return null");
+tests.isEqual(guessNumber(10, 1.5), null, "If guess is not an integer, return null");
 // Edge cases
 
 
