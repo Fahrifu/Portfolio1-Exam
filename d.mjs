@@ -62,5 +62,7 @@ tests.isEqual(guessNumber(10, 1.5), null, "If guess is not an integer, return nu
 // Edge cases
 tests.isEqual(guessNumber(10000, 9999), "Too low", "If target is 10000 and guess is 9999, return 'Too low'");
 tests.isEqual(guessNumber(0, -1), "Too low", "If target is 0 and guess is -1, return 'Too low'");
+tests.isEqual(guessNumber(0, 1), "Too high", "If target is 0 and guess is 1, return 'Too high'");
+
 
 //#endregion
