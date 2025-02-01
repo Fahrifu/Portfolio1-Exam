@@ -54,6 +54,7 @@ const tests = test("Format Name Function");
 // Valid Input
 
 tests.isEqual(formatName("john doe"), "John Doe", "String 'john doe' should be formatted to 'John Doe'");
+tests.isEqual(formatName("  john  "), "John", "String '  john  ' should be formatted to 'John'");
 
 
 //#endregion
