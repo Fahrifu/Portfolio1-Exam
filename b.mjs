@@ -28,6 +28,11 @@ function formatName(name) {
     if (/[^a-zA-Z\s]/.test(name)) {
         return null;
     }
+
+    const trimmedName = name.trim();
+    if (trimmedName === "") {
+        return ""
+    }
 }
 
 //#endregion
