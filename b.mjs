@@ -24,6 +24,10 @@ function formatName(name) {
     if (typeof name !== "string") {
         return null;
     }
+
+    if (/[^a-zA-Z\s]/.test(name)) {
+        return null;
+    }
 }
 
 //#endregion
